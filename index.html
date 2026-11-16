@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiro — Arena Test Pilot · ANTCPU</title>
+<meta name="description" content="Hiro's home page. Every contact gets a door, and every door leads into the right ANTCPU funnel: developers, marketers, businesses, and the arena.">
+<style>
+  :root{
+    --ink:#1c2430; --muted:#5b6675; --paper:#f7f5f0; --card:#ffffff;
+    --dev:#2563eb; --mkt:#0e9f6e; --biz:#e8830c; --arena:#7c3aed;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:Georgia,'Times New Roman',serif; background:var(--paper); color:var(--ink); line-height:1.55;}
+  .wrap{max-width:1060px; margin:0 auto; padding:32px 20px 56px;}
+  header{text-align:center; padding:28px 10px 8px;}
+  header .kicker{font-family:Verdana,sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--muted);}
+  header h1{font-size:52px; margin:8px 0 4px;}
+  header .role{font-size:19px; color:var(--muted); font-style:italic;}
+  header .promise{max-width:640px; margin:18px auto 0; font-size:17px;}
+  .lanes{display:grid; grid-template-columns:1fr; gap:18px; margin-top:36px;}
+  @media (min-width:640px){ .lanes{grid-template-columns:repeat(2,1fr);} }
+  @media (min-width:1024px){ .lanes{grid-template-columns:repeat(4,1fr);} .lane p.lede{min-height:66px;} }
+  @media (max-width:639px){ header h1{font-size:40px;} .wrap{padding:22px 14px 44px;} }
+  .lane{background:var(--card); border-radius:14px; padding:22px 20px 20px; border-top:6px solid var(--ink); box-shadow:0 2px 10px rgba(28,36,48,.08); display:flex; flex-direction:column; height:100%;}
+  .lane.dev{border-top-color:var(--dev);} .lane.mkt{border-top-color:var(--mkt);}
+  .lane.biz{border-top-color:var(--biz);} .lane.arena{border-top-color:var(--arena);}
+  .lane .icon{font-size:30px;}
+  .lane h2{font-size:23px; margin:8px 0 2px;}
+  .lane .who{font-family:Verdana,sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--muted);}
+  .lane p{font-size:15px; margin:10px 0;}
+  .steps{list-style:none; margin:6px 0 14px; font-size:14.5px;}
+  .steps li{padding:7px 0 7px 30px; position:relative; border-top:1px dashed #e3ded2;}
+  .steps li:first-child{border-top:none;}
+  .steps li b{position:absolute; left:0; top:7px; width:21px; height:21px; border-radius:50%; color:#fff; font-family:Verdana,sans-serif; font-size:12px; line-height:21px; text-align:center;}
+  .dev .steps li b{background:var(--dev);} .mkt .steps li b{background:var(--mkt);}
+  .biz .steps li b{background:var(--biz);} .arena .steps li b{background:var(--arena);}
+  .cta{margin-top:auto; display:flex; flex-direction:column; gap:8px;}
+  .cta a{font-family:Verdana,sans-serif; font-size:14px; text-align:center; text-decoration:none; padding:11px 12px; border-radius:9px; border:2px solid var(--ink); color:var(--ink); background:#fff;}
+  .cta a.main{color:#fff; border-color:transparent;}
+  .dev .cta a.main{background:var(--dev);} .mkt .cta a.main{background:var(--mkt);}
+  .biz .cta a.main{background:var(--biz);} .arena .cta a.main{background:var(--arena);}
+  .note{margin-top:30px; text-align:center; font-size:15px; color:var(--muted); max-width:680px; margin-left:auto; margin-right:auto;}
+  footer{margin-top:44px; text-align:center; border-top:1px solid #e3ded2; padding-top:22px;}
+  footer .belief{font-family:Verdana,sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--muted);}
+  footer .card{font-size:20px; margin-top:8px;}
+  footer .card a{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">ANTCPU · Human in the Loop</div>
+    <h1>Hiro 🐜</h1>
+    <div class="role">Arena Test Pilot — mentor for the Internship Challenge</div>
+    <p class="promise">Welcome to my home page. Every contact gets their own door, and every door
+    leads into the right funnel. Find your lane below — each one ends at a real next step.</p>
+  </header>
+
+  <div class="lanes">
+
+    <section class="lane dev">
+      <div class="icon">🛠️</div>
+      <h2>Build with us</h2>
+      <div class="who">For developers</div>
+      <p class="lede">New devs earn their place by building. The pathway is the same for everyone:</p>
+      <ol class="steps">
+        <li><b>1</b>Start with the first task in the challenge repo</li>
+        <li><b>2</b>Apply to join the next cohort</li>
+        <li><b>3</b>Build real projects with the team — <a href="https://github.com/antcpu/ads">antcpu/ads</a> is our own production build</li>
+      </ol>
+      <div class="cta">
+        <a class="main" href="https://github.com/antcpu/challenge">Start the challenge task</a>
+        <a href="https://antcpu.io/apply">Apply for the cohort</a>
+      </div>
+    </section>
+
+    <section class="lane mkt">
+      <div class="icon">📣</div>
+      <h2>Market with us</h2>
+      <div class="who">For marketers</div>
+      <p class="lede">Marketers grow by promoting real work, in the open, alongside the builders:</p>
+      <ol class="steps">
+        <li><b>1</b>Apply on the marketer track</li>
+        <li><b>2</b>Promote live projects and the arena</li>
+        <li><b>3</b>Grow with the cohort, week by week</li>
+      </ol>
+      <div class="cta">
+        <a class="main" href="https://antcpu.io/apply">Apply — marketer track</a>
+        <a href="https://antcpu.cloud">See the arena you'll promote</a>
+      </div>
+    </section>
+
+    <section class="lane biz">
+      <div class="icon">💼</div>
+      <h2>Work with ANTCPU</h2>
+      <div class="who">For businesses</div>
+      <p class="lede">Same-day creative, real results. If you run a business and need it built, start here:</p>
+      <ol class="steps">
+        <li><b>1</b>See what we build at antcpu.com</li>
+        <li><b>2</b>Ask for the free consultation</li>
+        <li><b>3</b>We close it in conversation — message us</li>
+      </ol>
+      <div class="cta">
+        <a class="main" href="https://antcpu.com">Visit antcpu.com</a>
+        <a href="https://m.me/antcpu">Message us on Messenger</a>
+      </div>
+    </section>
+
+    <section class="lane arena">
+      <div class="icon">🏟️</div>
+      <h2>See the work</h2>
+      <div class="who">For everyone</div>
+      <p class="lede">The arena is the proof, live in public: brands and builders from all over the world, scored in the open.</p>
+      <ol class="steps">
+        <li><b>1</b>Watch the board move</li>
+        <li><b>2</b>Meet the global bench behind it</li>
+        <li><b>3</b>Pick your lane and join in</li>
+      </ol>
+      <div class="cta">
+        <a class="main" href="https://antcpu.cloud">Enter the arena</a>
+        <a href="https://facebook.com/reel/2222799344967607/">Watch: how to share an ad</a>
+      </div>
+    </section>
+
+  </div>
+
+  <p class="note">Four lanes, kept separate on purpose — so developers land with developers,
+  marketers with marketers, and businesses get a conversation, not a crowd.
+  Working on a challenge build? Tag <b>@antcputestpilot</b> in your pull request and a mentor will see it.</p>
+
+  <footer>
+    <div class="belief">Human in the Loop</div>
+    <div class="card">Antony · <a href="https://antcpu.com">antcpu.com</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
