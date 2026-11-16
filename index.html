@@ -18,8 +18,11 @@
   header h1{font-size:52px; margin:8px 0 4px;}
   header .role{font-size:19px; color:var(--muted); font-style:italic;}
   header .promise{max-width:640px; margin:18px auto 0; font-size:17px;}
-  .lanes{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; margin-top:36px;}
-  .lane{background:var(--card); border-radius:14px; padding:22px 20px 20px; border-top:6px solid var(--ink); box-shadow:0 2px 10px rgba(28,36,48,.08); display:flex; flex-direction:column;}
+  .lanes{display:grid; grid-template-columns:1fr; gap:18px; margin-top:36px;}
+  @media (min-width:640px){ .lanes{grid-template-columns:repeat(2,1fr);} }
+  @media (min-width:1024px){ .lanes{grid-template-columns:repeat(4,1fr);} .lane p.lede{min-height:66px;} }
+  @media (max-width:639px){ header h1{font-size:40px;} .wrap{padding:22px 14px 44px;} }
+  .lane{background:var(--card); border-radius:14px; padding:22px 20px 20px; border-top:6px solid var(--ink); box-shadow:0 2px 10px rgba(28,36,48,.08); display:flex; flex-direction:column; height:100%;}
   .lane.dev{border-top-color:var(--dev);} .lane.mkt{border-top-color:var(--mkt);}
   .lane.biz{border-top-color:var(--biz);} .lane.arena{border-top-color:var(--arena);}
   .lane .icon{font-size:30px;}
@@ -61,11 +64,11 @@
       <div class="icon">🛠️</div>
       <h2>Build with us</h2>
       <div class="who">For developers</div>
-      <p>New devs earn their place by building. The pathway is the same for everyone:</p>
+      <p class="lede">New devs earn their place by building. The pathway is the same for everyone:</p>
       <ol class="steps">
         <li><b>1</b>Start with the first task in the challenge repo</li>
         <li><b>2</b>Apply to join the next cohort</li>
-        <li><b>3</b>Build real projects with the team</li>
+        <li><b>3</b>Build real projects with the team — <a href="https://github.com/antcpu/ads">antcpu/ads</a> is our own production build</li>
       </ol>
       <div class="cta">
         <a class="main" href="https://github.com/antcpu/challenge">Start the challenge task</a>
@@ -77,7 +80,7 @@
       <div class="icon">📣</div>
       <h2>Market with us</h2>
       <div class="who">For marketers</div>
-      <p>Marketers grow by promoting real work, in the open, alongside the builders:</p>
+      <p class="lede">Marketers grow by promoting real work, in the open, alongside the builders:</p>
       <ol class="steps">
         <li><b>1</b>Apply on the marketer track</li>
         <li><b>2</b>Promote live projects and the arena</li>
@@ -93,7 +96,7 @@
       <div class="icon">💼</div>
       <h2>Work with ANTCPU</h2>
       <div class="who">For businesses</div>
-      <p>Same-day creative, real results. If you run a business and need it built, start here:</p>
+      <p class="lede">Same-day creative, real results. If you run a business and need it built, start here:</p>
       <ol class="steps">
         <li><b>1</b>See what we build at antcpu.com</li>
         <li><b>2</b>Ask for the free consultation</li>
@@ -109,7 +112,7 @@
       <div class="icon">🏟️</div>
       <h2>See the work</h2>
       <div class="who">For everyone</div>
-      <p>The arena is the proof, live in public: brands and builders from all over the world, scored in the open.</p>
+      <p class="lede">The arena is the proof, live in public: brands and builders from all over the world, scored in the open.</p>
       <ol class="steps">
         <li><b>1</b>Watch the board move</li>
         <li><b>2</b>Meet the global bench behind it</li>
@@ -117,7 +120,7 @@
       </ol>
       <div class="cta">
         <a class="main" href="https://antcpu.cloud">Enter the arena</a>
-        <a href="https://github.com/antcpu/ads">The ads repo on GitHub</a>
+        <a href="https://facebook.com/reel/2222799344967607/">Watch: how to share an ad</a>
       </div>
     </section>
 
